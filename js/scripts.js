@@ -1,5 +1,21 @@
 
 // Menu Mobile
+//mostra Sidbar
+document.getElementById("hamburguer-icon").onclick = function(){
+  document.getElementById("sliding-header-menu-outer").style.right = "0";
+}
+
+
+//Add mão no Butão
+document.getElementById("sliding-header-menu-close-button").onmouseover = function() {
+  document.getElementById("sliding-header-menu-close-button").style.cursor = "pointer";
+ 
+}
+//esconder Sidbar
+document.getElementById("sliding-header-menu-close-button").onclick = function(){
+  document.getElementById("sliding-header-menu-outer").style.right = "-320px";
+ 
+}
 
 
 
