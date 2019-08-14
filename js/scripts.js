@@ -58,10 +58,9 @@ for (var a = 0; a < about_tags.length; a++) {
 
 
 // Slider de serviços
-
 var our_services = [
   {
-    'title': 'Webdesign',
+    'title': 'Webdesign 5646',
     'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi.'
   },
 
@@ -76,6 +75,47 @@ var our_services = [
   }
 
 ];
+
+//service-previous
+//service-next
+//service-title
+//service-text
+
+let servico_atual = 0;
+
+//Butão Voltar
+document.getElementById("service-previous").onclick = function(){
+  if(servico_atual == 0){
+    var servico_anterior  = our_services.length - 1;
+  }else {
+    var servico_anterior  = servico_atual - 1;
+  }
+
+  //exibindo as informações de Cada Elemento do Objeto
+  document.getElementById("service-title").innerHTML = our_services[servico_anterior].title;
+  document.getElementById("service-text").innerHTML = our_services[servico_anterior].text;
+
+  servico_atual = servico_anterior;
+}
+
+//Butão Avançar
+document.getElementById("service-next").onclick = function(){
+  if(servico_atual == our_services.length - 1){
+    var servico_seguinte  = 0;
+  }else {
+    var servico_seguinte  = servico_atual + 1;
+  }
+
+  //exibindo as informações de Cada Elemento do Objeto
+  document.getElementById("service-title").innerHTML = our_services[servico_seguinte].title;
+  document.getElementById("service-text").innerHTML = our_services[servico_seguinte].text;
+
+  servico_atual = servico_seguinte;
+}
+
+
+
+
 
 
 // Data Footer
