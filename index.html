@@ -395,7 +395,26 @@
 
                 <div class="como-chegar small-5 medium-3 small-offset-1 medium-offset-0 columns">
                     <h4 class="footer-section-title">Como chegar</h4>
+
                     <div id="map"></div>
+
+                    <!-- Script do Map-->
+                    <script>
+                        // Initialize and add the map
+                        function initMap() {
+                            // The location of Uluru -16.629334, -49.216438
+                            var uluru = { lat: -16.624458, lng: -49.278838 };
+                            // The map, centered at Uluru
+                            var map = new google.maps.Map(
+                                document.getElementById('map'), { zoom: 16, center: uluru });
+                            // The marker, positioned at Uluru
+                            var marker = new google.maps.Marker({ position: uluru, map: map });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSW-CwJBMS7KuYXuyob6Cq3ziQQFRM0NE&callback=initMap">
+                    </script>
+
                 </div>
 
                 <hr>

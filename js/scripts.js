@@ -129,6 +129,9 @@ document.getElementById("current_year").innerHTML = ano_atual;
 
 
 
+//colocando map na pagina: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key
+//API Key:  AIzaSyBSW-CwJBMS7KuYXuyob6Cq3ziQQFRM0NE
+
 
 
 
