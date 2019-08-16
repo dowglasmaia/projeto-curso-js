@@ -118,7 +118,15 @@ document.getElementById("service-next").onclick = function(){
 
 
 
-// Data Footer
+// Data Footer - Atualizando o Ano automaticamente.
+
+var ano_atual = new Date;
+console.log(ano_atual)
+//retornado o Ano
+ano_atual = ano_atual.getFullYear();
+console.log(ano_atual)
+document.getElementById("current_year").innerHTML = ano_atual;
+
 
 
 
